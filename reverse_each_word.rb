@@ -9,10 +9,11 @@ def reverse_each_word(sentence)
 end
 
 
+new_array = []
 
 def reverse_each_word(sentence)
   word_array = sentence.split
-  word_array.collect do |word|
+  word_array.each do |word|
     word.reverse!
     new_array << word
   end
